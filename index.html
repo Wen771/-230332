@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑马面面</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- 必须引用 -->
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <section class="warp">
+        <!-- 头部区域 -->
+        <header class="header">黑马面面</header>
+
+        <!-- 导航栏部分 -->
+        <nav class="nav">
+            <a href="#" class="item">
+                <img src="./icons/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+
+            <a href="#" class="item">
+                <img src="./icons/icon2.png" alt="">
+                <span>笔试</span>
+            </a>
+
+            <a href="#" class="item">
+                <img src="./icons/icon3.png" alt="">
+                <span>技术面试</span>
+            </a>
+
+            <a href="#" class="item">
+                <img src="./icons/icon4.png" alt="">
+                <span>模拟面试</span>
+            </a>
+
+            <a href="#" class="item">
+                <img src="./icons/icon5.png" alt="">
+                <span>面试技巧</span>
+            </a>
+
+            <a href="#" class="item">
+                <img src="./icons/icon6.png" alt="">
+                <span>薪资查询</span>
+            </a>
+
+        </nav>
+        <!-- go -->
+        <section class="go">
+
+            <img src="./images/go.png" alt="">
+        </section>
+    </section>
+    <!-- 就业指导模块 -->
+    <section class="content">
+        <div class="con-hd">
+            <h4>
+                <span class="icon">
+                    <img src="./icons/i2.png" alt="">
+                </span>
+                就业指导
+            </h4>
+            <a href="#" class="more"> 更多>></a>
+        </div>
+        <!-- 轮播图 -->
+        <div class="get_job_focus">
+            <!-- ADD Arrows -->
+
+            <!-- Swiper -->
+            <div class="swiper-container get_job_fo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/2.jpg" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/3.jpg" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </section>
+    <!-- 充电学习模块 -->
+    <section class="content study_con">
+        <div class="con-hd">
+            <h4>
+                <span class="icon">
+                    <img src="./icons/i1.png" alt="">
+                </span>
+                充电学习
+            </h4>
+            <a href="#" class="more"> 更多>></a>
+        </div>
+        <!-- 学校模块轮播图 -->
+        <div class="study">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+
+        <a href="#" class="item"><img src="./icons/home.png" alt="">
+            <p>首页</p>
+        </a>
+
+        <a href="#" class="item"><img src="./icons/ms.png" alt="">
+            <p>模拟面试</p>
+        </a>
+
+        <a href="#" class="item"><img src="./icons/net.png" alt="">
+            <p>技术面试</p>
+        </a>
+
+        <a href="#" class="item"><img src="./icons/user.png" alt="">
+            <p>我的主页</p>
+        </a>
+
+    </footer>
+
+    <script src="./js/flexible.js"></script>
+    <!-- 必须引用才能使用轮播图 -->
+    <script src="./js/swiper.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // 对象
+        var swiper = new Swiper('.swiper-container', {
+            // 能够显示slider的个数
+            slidesPerView: 2,
+            // 每一个slider之间的距离
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+
+            // 添加左右箭头
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // 第二个函数的轮播图
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+
+        });
+
+    </script>
+
+</body>
+
+</html>
