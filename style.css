@@ -1,0 +1,194 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .w {
+     width: 1002px;
+     margin: auto;
+ }
+
+ /* 头部区域开始了 */
+ .header {
+     width: 1002px;
+     height: 440px;
+     /* background-color:plum; */
+ }
+
+ .ab {
+     height: 121px;
+     /* background-color: pink; */
+ }
+
+ .logo img {
+     float: left;
+     width: 300px;
+     height: 121px;
+ }
+
+ .serch {
+     float: left;
+     margin-left: 400px;
+     width: 260px;
+     height: 30px;
+     margin-top: 40px;
+     /* background-color: antiquewhite;  */
+ }
+
+ .serch input {
+     /* float:left; */
+     width: 240px;
+     height: 28px;
+     border: 1px solid gray;
+     color: gray;
+ }
+
+ .serch botton {
+     float: right;
+     background-color: blue;
+     background: url(images/search.png);
+     height: 30px;
+     width: 18px;
+ }
+
+ .nav {
+     height: 40px;
+     /* background-color: aqua; */
+ }
+
+ li {
+
+     list-style-type: none;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ .nav ul li {
+     margin-right: 3px;
+     float: left;
+     height: 40px;
+     width: 140px;
+     /* border:1px solid #0066CC; */
+     background-color: #0066CC;
+     /* margin-bottom: 5px; */
+ }
+
+ .nav ul li a {
+     height: 36px;
+     width: 140px;
+     line-height: 40px;
+     text-align: 40px;
+     padding: 0 37px;
+     font-size: 14px;
+     font-weight: 700;
+     color: #fff;
+ }
+
+ .banner img {
+     height: 280px;
+     width: 100%;
+     /* margin-bottom: 5px; */
+ }
+
+ /* 头部区域结束了 */
+ .middle {
+     width: 1002px;
+     height: 230px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ .serve {
+     float: left;
+     width: 350px;
+     height: 230px;
+     border: 1px solid gray;
+ }
+
+ .serve h2 {
+     padding-top: 20px;
+     padding-left: 5px;
+ }
+
+ .serve p {
+     padding-left: 6px;
+ }
+
+ .news {
+     float: left;
+     width: 440px;
+     height: 230px;
+ }
+
+ .news h2 {
+     height: 30px;
+ }
+
+ .news ul li {
+     height: 30px;
+     line-height: 30px;
+     width: 447px;
+     border-bottom: 1px solid gray;
+ }
+
+ .news ul li a {
+
+     float: left;
+     padding-left: 3px;
+     font-size: 12px;
+     color: rgba(0, 0, 0, 0.51);
+ }
+
+ .news ul li a:hover {
+     color: red;
+ }
+
+ .news ul li span {
+     float: right;
+     font-size: 12px;
+     color: rgba(0, 0, 0, 0.51);
+     margin-right: 30px;
+
+ }
+
+ .subnav {
+     float: right;
+     width: 205px;
+     height: 230px;
+ }
+
+ .message img {
+     width: 205x;
+     height: 65px;
+     margin-top: 10px;
+ }
+
+ .tel {
+     margin-top: 10px;
+     height: 152px;
+     background: url(images/tel.png);
+     background-repeat: no-repeat;
+ }
+
+ .tel ul a {
+     font-size: 12px;
+     color: rgba(0, 0, 0, 0.51);
+     margin-left: 8px;
+ }
+
+ .footer {
+     position: relative;
+     width: 1002px;
+     height: 30px;
+     background-color: #0066CC;
+ }
+
+ .footer h3 {
+     position: absolute;
+     right: 0;
+     height: 30px;
+     line-height: 30px;
+     font-size: 18px;
+ }
