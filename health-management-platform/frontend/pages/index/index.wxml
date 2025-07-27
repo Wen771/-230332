@@ -1,0 +1,90 @@
+<view class="container">
+  <!-- 用户信息卡片 -->
+  <view class="card user-card">
+    <view class="user-info">
+      <image class="avatar" src="{{userInfo.avatar_url || '/images/default-avatar.png'}}" mode="aspectFill"></image>
+      <view class="user-details">
+        <text class="username">{{userInfo.nickname || '未设置昵称'}}</text>
+        <text class="user-desc">{{healthGoal || '设定你的健康目标'}}</text>
+      </view>
+    </view>
+    <view class="user-stats">
+      <view class="stat-item">
+        <text class="stat-value">{{bmi || '--'}}</text>
+        <text class="stat-label">BMI</text>
+      </view>
+      <view class="stat-item">
+        <text class="stat-value">{{todaySteps || '0'}}</text>
+        <text class="stat-label">今日步数</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 今日概览 -->
+  <view class="card">
+    <view class="card-header">
+      <text class="card-title">今日概览</text>
+      <text class="card-date">{{todayDate}}</text>
+    </view>
+    <view class="today-stats">
+      <view class="stat-grid">
+        <view class="grid-item" bindtap="goToHealth">
+          <image class="grid-icon" src="/images/weight.png"></image>
+          <text class="grid-value">{{todayWeight || '--'}} kg</text>
+          <text class="grid-label">体重</text>
+        </view>
+        <view class="grid-item" bindtap="goToDiet">
+          <image class="grid-icon" src="/images/calories.png"></image>
+          <text class="grid-value">{{todayCalories || '0'}} 卡</text>
+          <text class="grid-label">热量摄入</text>
+        </view>
+        <view class="grid-item" bindtap="goToExercise">
+          <image class="grid-icon" src="/images/exercise-time.png"></image>
+          <text class="grid-value">{{todayExercise || '0'}} 分钟</text>
+          <text class="grid-label">运动时长</text>
+        </view>
+        <view class="grid-item" bindtap="goToHealth">
+          <image class="grid-icon" src="/images/sleep.png"></image>
+          <text class="grid-value">{{todaySleep || '--'}} 小时</text>
+          <text class="grid-label">睡眠时长</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 快捷操作 -->
+  <view class="card">
+    <view class="card-header">
+      <text class="card-title">快捷操作</text>
+    </view>
+    <view class="quick-actions">
+      <view class="action-item" bindtap="addHealthData">
+        <image class="action-icon" src="/images/add-health.png"></image>
+        <text class="action-text">记录健康数据</text>
+      </view>
+      <view class="action-item" bindtap="addDiet">
+        <image class="action-icon" src="/images/add-diet.png"></image>
+        <text class="action-text">记录饮食</text>
+      </view>
+      <view class="action-item" bindtap="addExercise">
+        <image class="action-icon" src="/images/add-exercise.png"></image>
+        <text class="action-text">记录运动</text>
+      </view>
+      <view class="action-item" bindtap="viewReport">
+        <image class="action-icon" src="/images/report.png"></image>
+        <text class="action-text">健康报告</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 健康趋势 -->
+  <view class="card">
+    <view class="card-header">
+      <text class="card-title">7天健康趋势</text>
+      <text class="card-more" bindtap="viewReport">查看详情</text>
+    </view>
+    <view class="trend-chart">
+      <canvas canvas-id="trendChart" class="chart-canvas"></canvas>
+    </view>
+  </view>
+</view>
